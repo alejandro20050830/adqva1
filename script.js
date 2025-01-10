@@ -6,6 +6,6 @@ document.querySelectorAll('.boton').forEach(button => {
 
         setTimeout(() => {
             window.location.href = this.href;
-        }, 6000);
+        }, 10000);
     });
 });
