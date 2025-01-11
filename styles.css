@@ -79,6 +79,7 @@ main {
     transition: background-color 0.3s ease;
 }
 
+
 .boton:hover {
     background-color: #0056b3;
 }
@@ -91,6 +92,36 @@ main {
         transform: scale(1.05); /* Aumenta un 10% */
     }
 }
+@keyframes shadowBlink {
+    0%, 100% {
+        box-shadow: 0 20px 30px rgb(234 15 193); /* Sombra inicial */
+    }
+    50% {
+        box-shadow: 0 4px 8px rgb(0 0 0 / 10%); /* Sombra reducida */
+    }
+}
+#banner-button {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;background-color: #225cb2d9;
+    text-decoration: none;
+    color: #eaeff5;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index:1000 ;
+    animation: shadowBlink 1.5s infinite ease-in-out;
+
+  
+
+    }
 
 article.noticia {
     animation: escalado 2s ease-in-out infinite; /* Escalado suave */
